@@ -27,3 +27,8 @@ $facade->getController(); // Controller
 $facade->getAction(); // Action
 $facade->getParams(); // Params
 ```
+
+# Install composer
+```ssh
+$ composer require adara-php/mvc
+```
