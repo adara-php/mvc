@@ -17,7 +17,7 @@ $parse->getAction(); // Action
 $parse->getParams(); // Params
 ```
 
-# Usage 2 | Facade````````
+# Usage 2 | Facade
 ```php
 <?php
 use \Adara\MVC\Uri\UriFacade;
