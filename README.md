@@ -32,3 +32,17 @@ $facade->getParams(); // Params
 ```ssh
 $ composer require adara-php/mvc
 ```
+
+# Usage ControllerFactory
+```php
+<?php
+
+use \Adara\MVC\Uri\UriFacade;
+
+try {
+    $factory = new \Adara\MVC\Controller\ControllerFactory(new UriFacade('router'),'Adara\MVC\Controller');
+    $factory->factory();
+}catch (Exception $e){
+    echo $e->getMessage();
+}
+```

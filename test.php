@@ -31,3 +31,15 @@ $facade->getAction(); // Action
 $facade->getParams(); // Params
 
 var_dump($facade);
+
+var_dump([]);
+var_dump(is_array([]));
+var_dump(empty([]));
+var_dump(count([]));
+
+try {
+    $factory = new \Adara\MVC\Controller\ControllerFactory(new UriFacade('router'),'Adara\MVC\Controller');
+    $factory->factory();
+}catch (Exception $e){
+    echo $e->getMessage();
+}

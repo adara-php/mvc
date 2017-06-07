@@ -23,8 +23,8 @@ class Param implements iGet
 
     private function sanitize()
     {
-        $this->uri = (substr($this->uri, -1) == '/') ? substr($this->uri, 0, -1) : $this->uri;
-        $this->uri = (substr($this->uri, 0,1) == '/') ? substr($this->uri, 1) : $this->uri;
+        $this->uri = (substr($this->uri, -1) == '/') ? substr($this->uri, 0, -1) : $this->uri; // remove barra final
+        $this->uri = (substr($this->uri, 0,1) == '/') ? substr($this->uri, 1) : $this->uri; // remove barra inicial
         $this->uri = trim($this->uri);
     }
 

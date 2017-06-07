@@ -35,8 +35,9 @@ class Parse implements iParseUri
         $this->controller = array_shift($partials);
         $this->action = array_shift($partials);
         $this->params = $partials;
-        $this->controller = (is_null($this->controller)) ? 'index' : $this->controller;
-        $this->action = (is_null($this->action)) ? 'index' : $this->action;
+
+        $this->controller = (is_null($this->controller)||empty($this->controller)) ? 'index' : $this->controller;
+        $this->action = (is_null($this->action)||empty($this->action)) ? 'index' : $this->action;
     }
 
     public function getController()
