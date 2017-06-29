@@ -1,5 +1,5 @@
 {
-    "name": "adara-php/mvc",
+    "name": "adaraphp/mvc",
     "description": "Manage mvc calls",
     "keywords": ["fernandopetry", "php", "mvc"],
     "type": "library",
